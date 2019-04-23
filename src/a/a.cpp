@@ -1,5 +1,6 @@
 #include <iostream>
-#include "target.h"
+#include "a.h"
+#include "b/b.h"
 
 void normal_func(void) {
   std::cout << "origin normal func called" << std::endl;
@@ -26,6 +27,7 @@ int A::class_call(void) {
   std::cout << "origin class call called" << std::endl;
   normal_func();
   normal_func1();
+  normal_func_in_b();
   return 0;
 }
 

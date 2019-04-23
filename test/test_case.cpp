@@ -1,5 +1,5 @@
 #include <iostream>
-#include "target.h"
+#include "a/a.h"
 
 // mock funcs, these mock funcs will replace origin funcs
 void A::class_func(void) {
@@ -24,4 +24,6 @@ int main() {
   normal_func();
   // origin normal func
   normal_func_origin();
+
+  a.class_call();
 }
