@@ -53,6 +53,7 @@ foreach(str IN LISTS strings)
 endforeach(str)
 
 # del target_files in srcs and add obj files in srcs
+# TODO: fix diff path same name file issue
 list(LENGTH target_files target_num)
 MATH(EXPR target_num "${target_num}-1")
 foreach(j RANGE ${target_num})
